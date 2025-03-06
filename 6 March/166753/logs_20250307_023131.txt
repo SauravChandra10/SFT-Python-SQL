@@ -1,0 +1,6 @@
+2025-03-07 02:31:31,642 - INFO - Workload scores updated successfully.
+2025-03-07 02:31:31,642 - INFO - Scheduler started. Press Ctrl+C to exit.
+2025-03-07 02:31:41,689 - INFO - Workload scores updated successfully.
+2025-03-07 02:31:51,743 - INFO - Workload scores updated successfully.
+2025-03-07 02:32:01,799 - INFO - Workload scores updated successfully.
+2025-03-07 02:32:02,247 - INFO - Scheduler stopped.

@@ -1,0 +1,13 @@
+2025-03-06 20:08:19 [INFO] Logging setup complete. Logs will be saved to logs_20250306_200819.txt
+2025-03-06 20:08:19 [INFO] Connected to PostgreSQL database successfully.
+2025-03-06 20:08:19 [INFO] Running data integrity checks...
+2025-03-06 20:08:19 [INFO] Starting integrity check for negative quantities or expiry dates before product approval.
+2025-03-06 20:08:19 [ERROR] Inventory ID 14: Negative Quantity (Product: BioRelief, Batch: BATCH-D2, Quantity: -10, Expiry: 2023-07-01, Approval: 2020-06-10, Supplier: HealthFirst)
+2025-03-06 20:08:19 [ERROR] Inventory ID 15: Expiry Date Before Approval (Product: MediCure, Batch: BATCH-E2, Quantity: 95, Expiry: 2018-11-30, Approval: 2018-12-01, Supplier: AsiaBio Supplies)
+2025-03-06 20:08:19 [INFO] Checking for null critical fields in Products, Suppliers, and Inventory.
+2025-03-06 20:08:19 [INFO] All products have a valid product_name.
+2025-03-06 20:08:19 [INFO] All suppliers have a valid supplier_name.
+2025-03-06 20:08:19 [INFO] All inventory records have a valid expiry_date.
+2025-03-06 20:08:19 [ERROR] Data integrity issues found. Aborting deployment.
+2025-03-06 20:08:19 [ERROR]   - Inventory ID 14: Negative Quantity (Product: BioRelief, Batch: BATCH-D2, Quantity: -10, Expiry: 2023-07-01, Approval: 2020-06-10, Supplier: HealthFirst)
+2025-03-06 20:08:19 [ERROR]   - Inventory ID 15: Expiry Date Before Approval (Product: MediCure, Batch: BATCH-E2, Quantity: 95, Expiry: 2018-11-30, Approval: 2018-12-01, Supplier: AsiaBio Supplies)
