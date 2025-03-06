@@ -1,0 +1,13 @@
+"Column(name='program_id', type_code=23)","Column(name='program_name', type_code=1043)","Column(name='resource_name', type_code=1043)","Column(name='allocated_quantity', type_code=23)","Column(name='allocation_date', type_code=1082)","Column(name='running_total', type_code=20)","Column(name='allocation_rank', type_code=20)"
+1,Food Drive,Stationery,50,2025-01-10,150,1
+1,Food Drive,Non-perishable Food,100,2025-01-05,100,2
+2,Clothing Donation,Stationery,60,2025-02-12,140,1
+2,Clothing Donation,Warm Clothes,80,2025-02-05,80,2
+3,Medical Camp,Medical Kits,70,2025-03-03,70,1
+4,Educational Workshop,Stationery,40,2025-04-05,40,1
+5,Housing Support,Building Materials,90,2025-05-10,90,1
+6,Environmental Cleanup,Cleaning Supplies,80,2025-06-03,80,1
+7,Senior Care,Mobility Aids,50,2025-07-04,50,1
+8,Youth Mentorship,Career Books,60,2025-08-15,60,1
+9,Animal Rescue,Pet Food,70,2025-09-05,70,1
+10,Community Gardening,Gardening Tools,30,2025-10-10,30,1

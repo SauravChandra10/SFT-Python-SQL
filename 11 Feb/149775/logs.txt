@@ -1,0 +1,6 @@
+2025-02-11 14:38:29,826:INFO:Script started.
+2025-02-11 14:38:29,867:INFO:Database connection established.
+2025-02-11 14:38:29,871:INFO:SQL query executed successfully. Rows fetched: 10
+2025-02-11 14:38:29,872:INFO:Results successfully written to output.csv.
+2025-02-11 14:38:29,872:INFO:Database connection closed.
+2025-02-11 14:38:29,872:INFO:Script ended.

@@ -1,0 +1,32 @@
+2025-02-20 20:59:05,030 - INFO - Connected to the database successfully.
+2025-02-20 20:59:05,034 - INFO - Successfully executed query: SELECT
+    c.city,
+    p.category,
+    DATE_TRUNC('month', o.order_date) AS order_month,
+    SUM(o.quantity) AS total_quantity_sold,
+    SUM(o.quantity * p.price) AS total_sales_value,
+    (
+      SELECT SUM(p2.inventory_count)
+      FROM products p2
+      WHERE p2.category = p.category
+    ) AS current_inventory
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+JOIN products p ON o.product_id = p.product_id
+GROUP BY c.city, p.category, DATE_TRUNC('month', o.order_date);
+2025-02-20 20:59:05,036 - INFO - Successfully executed query: SELECT
+  CASE
+    WHEN c.age < 26 THEN 'GenZ'
+    WHEN c.age BETWEEN 26 AND 50 THEN 'Millennials'
+    ELSE 'Rest'
+  END AS age_group,
+  COUNT(o.order_id) AS total_orders,
+  SUM(o.quantity) AS total_quantity_sold,
+  SUM(o.quantity * p.price) AS total_sales_value,
+  ROUND(AVG(o.quantity * p.price), 2) AS avg_order_value
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN products p ON o.product_id = p.product_id
+GROUP BY age_group;
+2025-02-20 20:59:05,037 - INFO - Results successfully saved to CSV file: output.csv
+2025-02-20 20:59:05,037 - INFO - Database connection closed.

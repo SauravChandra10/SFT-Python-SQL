@@ -1,0 +1,5 @@
+2025-02-22 01:51:11,978 - INFO - Attempting to connect to the database.
+2025-02-22 01:51:12,021 - INFO - Database connection established.
+2025-02-22 01:51:12,025 - INFO - Successfully executed QUERY_1
+2025-02-22 01:51:12,028 - INFO - Successfully executed QUERY_2
+2025-02-22 01:51:12,030 - INFO - Database connection closed.

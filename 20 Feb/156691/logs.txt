@@ -1,0 +1,12 @@
+2025-02-21 02:44:31,640 - INFO - Script started.
+2025-02-21 02:44:31,640 - INFO - Connecting to the database.
+2025-02-21 02:44:31,681 - INFO - Executing Query1.
+2025-02-21 02:44:31,686 - INFO - Query1 executed successfully. Retrieved 10 rows.
+2025-02-21 02:44:31,686 - INFO - Writing results to output1.csv.
+2025-02-21 02:44:31,688 - INFO - Results successfully written to output1.csv.
+2025-02-21 02:44:31,688 - INFO - Executing Query2.
+2025-02-21 02:44:31,689 - INFO - Query2 executed successfully. Retrieved 10 rows.
+2025-02-21 02:44:31,689 - INFO - Writing results to output2.csv.
+2025-02-21 02:44:31,690 - INFO - Results successfully written to output2.csv.
+2025-02-21 02:44:31,690 - INFO - Database connection closed.
+2025-02-21 02:44:31,690 - INFO - Script finished.

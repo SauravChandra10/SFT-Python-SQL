@@ -1,0 +1,124 @@
+import psycopg2
+import csv
+import logging
+
+logging.basicConfig(
+    filename='logs.txt',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+conn_params = {
+    "dbname": "irrigation_system",
+    "user": "admin",
+    "password": "admin_password",
+    "host": "localhost",
+    "port": "5432"
+}
+
+query1 = """
+WITH avg_moisture AS (
+    SELECT 
+        site_id, 
+        AVG(moisture) AS avg_moisture
+    FROM sensor_data
+    GROUP BY site_id
+)
+SELECT 
+    fs.site_id,
+    fs.site_name,
+    am.avg_moisture,
+    ir.schedule_id,
+    ir.scheduled_time,
+    ir.duration,
+    ir.water_volume,
+    ir.status
+FROM farming_sites fs
+JOIN avg_moisture am ON fs.site_id = am.site_id
+JOIN irrigation_schedule ir ON fs.site_id = ir.site_id
+WHERE am.avg_moisture < 30.0
+ORDER BY am.avg_moisture ASC;
+"""
+
+query2 = """
+WITH daily_sensor AS (
+    SELECT
+        site_id,
+        DATE(measurement_timestamp) AS measurement_date,
+        AVG(moisture) AS avg_moisture,
+        AVG(temperature) AS avg_temperature
+    FROM sensor_data
+    GROUP BY site_id, DATE(measurement_timestamp)
+),
+daily_irrigation AS (
+    SELECT
+        site_id,
+        DATE(scheduled_time) AS irrigation_date,
+        COUNT(*) AS irrigation_count,
+        SUM(water_volume) AS total_water_volume
+    FROM irrigation_schedule
+    GROUP BY site_id, DATE(scheduled_time)
+)
+SELECT
+    fs.site_id,
+    fs.site_name,
+    ds.measurement_date,
+    ds.avg_moisture,
+    ds.avg_temperature,
+    COALESCE(di.irrigation_count, 0) AS irrigation_count,
+    COALESCE(di.total_water_volume, 0) AS total_water_volume
+FROM farming_sites fs
+JOIN daily_sensor ds ON fs.site_id = ds.site_id
+LEFT JOIN daily_irrigation di 
+    ON fs.site_id = di.site_id 
+    AND ds.measurement_date = di.irrigation_date
+ORDER BY ds.measurement_date ASC, fs.site_id;
+"""
+
+def execute_query(conn, query):
+    with conn.cursor() as cur:
+        logging.info("Executing query: %s", query.strip().split('\n')[0])
+        cur.execute(query)
+        colnames = [desc[0] for desc in cur.description]
+        rows = cur.fetchall()
+        logging.info("Query executed successfully with %d rows returned.", len(rows))
+    return colnames, rows
+
+def write_csv(filename, headers, rows):
+    try:
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(headers)
+            writer.writerows(rows)
+        logging.info("Results saved to %s", filename)
+    except Exception as e:
+        logging.error("Error writing to %s: %s", filename, e)
+
+def main():
+    conn = None
+    try:
+        conn = psycopg2.connect(**conn_params)
+        logging.info("Connected to the database.")
+        print("Connected to the database.")
+
+        logging.info("Starting execution of Query 1")
+        columns1, results1 = execute_query(conn, query1)
+        write_csv('output1.csv', columns1, results1)
+        print("Query 1 results saved to output1.csv")
+
+        logging.info("Starting execution of Query 2")
+        columns2, results2 = execute_query(conn, query2)
+        write_csv('output2.csv', columns2, results2)
+        print("Query 2 results saved to output2.csv")
+
+    except Exception as e:
+        logging.error("An error occurred: %s", e, exc_info=True)
+        print("An error occurred:", e)
+    finally:
+        if conn:
+            conn.close()
+            logging.info("Database connection closed.")
+            print("Database connection closed.")
+
+if __name__ == "__main__":
+    main()

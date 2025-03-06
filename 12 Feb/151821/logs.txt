@@ -1,0 +1,9 @@
+2025-02-13 19:13:45,141 INFO: Connecting to the database...
+2025-02-13 19:13:45,191 INFO: Database connection established.
+2025-02-13 19:13:45,191 INFO: Executing query 1...
+2025-02-13 19:13:45,191 INFO: Query 1 executed successfully, 5 rows retrieved.
+2025-02-13 19:13:45,191 INFO: Query 1 results saved to output1.csv.
+2025-02-13 19:13:45,191 INFO: Executing query 2...
+2025-02-13 19:13:45,191 INFO: Query 2 executed successfully, 6 rows retrieved.
+2025-02-13 19:13:45,191 INFO: Query 2 results saved to output2.csv.
+2025-02-13 19:13:45,191 INFO: Database connection closed.

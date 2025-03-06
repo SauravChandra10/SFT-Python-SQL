@@ -1,0 +1,8 @@
+2025-02-24 19:55:41,978 - INFO - Connected to the PostgreSQL database.
+2025-02-24 19:55:41,982 - INFO - Executing query: WITH TrendEngagement AS (
+2025-02-24 19:55:41,987 - INFO - Query executed successfully, fetched 5 rows
+2025-02-24 19:55:41,987 - INFO - Results written to output1.csv successfully.
+2025-02-24 19:55:41,987 - INFO - Executing query: WITH HighEngagementTrends AS (
+2025-02-24 19:55:41,990 - INFO - Query executed successfully, fetched 6 rows
+2025-02-24 19:55:41,993 - INFO - Results written to output2.csv successfully.
+2025-02-24 19:55:41,993 - INFO - PostgreSQL connection closed.

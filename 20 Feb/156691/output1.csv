@@ -1,0 +1,11 @@
+itinerary_id,first_name,last_name,itinerary_name,start_date,end_date,destination_names,avg_eco_rating
+1,John,Doe,Amazon Adventure,2025-03-10,2025-03-20,"['Amazon Rainforest Lodge', 'Costa Rican Eco Village']",9.5000000000000000
+2,Jane,Smith,Costa Rican Escape,2025-04-15,2025-04-25,"['Costa Rican Eco Village', 'Iceland Geothermal Spa']",9.0000000000000000
+3,Emily,Davis,Patagonia Expedition,2025-05-05,2025-05-15,"['Patagonian Wilderness', 'New Zealand Nature Escape']",8.5000000000000000
+4,Michael,Brown,Kenyan Safari,2025-06-01,2025-06-10,"['Kenyan Safari Retreat', 'Norwegian Fjord Eco Cruise']",8.0000000000000000
+5,Sarah,Johnson,Bali Farm Retreat,2025-07-20,2025-07-30,"['Bali Organic Farm Stay', 'Sri Lanka Tea Estate']",7.5000000000000000
+6,David,Wilson,New Zealand Nature Tour,2025-08-12,2025-08-22,"['New Zealand Nature Escape', 'Australian Outback Eco Camp']",8.5000000000000000
+7,Laura,Lee,Icelandic Getaway,2025-09-05,2025-09-12,['Iceland Geothermal Spa'],8.0000000000000000
+8,Robert,Garcia,Fjord Explorer,2025-10-01,2025-10-08,['Norwegian Fjord Eco Cruise'],9.0000000000000000
+9,Anna,Martinez,Sri Lanka Discovery,2025-11-15,2025-11-22,"['Sri Lanka Tea Estate', 'Amazon Rainforest Lodge']",8.0000000000000000
+10,James,Anderson,Outback Adventure,2025-12-01,2025-12-10,"['Australian Outback Eco Camp', 'Patagonian Wilderness']",8.0000000000000000

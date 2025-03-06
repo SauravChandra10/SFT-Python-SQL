@@ -1,0 +1,9 @@
+2025-02-11 00:12:53,032 - INFO - Script started.
+2025-02-11 00:12:53,032 - INFO - Connecting to the database...
+2025-02-11 00:12:53,071 - INFO - Database connection established.
+2025-02-11 00:12:53,071 - INFO - Executing SQL query.
+2025-02-11 00:12:53,071 - INFO - Query executed successfully. Rows fetched: 9
+2025-02-11 00:12:53,071 - INFO - Writing results to CSV file 'output.csv'.
+2025-02-11 00:12:53,071 - INFO - CSV file written successfully.
+2025-02-11 00:12:53,071 - INFO - Database connection closed.
+2025-02-11 00:12:53,071 - INFO - Script finished.

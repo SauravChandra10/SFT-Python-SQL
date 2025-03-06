@@ -1,0 +1,7 @@
+2025-02-22 02:00:47,988 - INFO - Attempting to connect to the database.
+2025-02-22 02:00:48,031 - INFO - Database connection established.
+2025-02-22 02:00:48,033 - INFO - Successfully executed QUERY_1
+2025-02-22 02:00:48,034 - INFO - Query 1 results saved to output1.csv
+2025-02-22 02:00:48,036 - INFO - Successfully executed QUERY_2
+2025-02-22 02:00:48,037 - INFO - Query 2 results saved to output2.csv
+2025-02-22 02:00:48,037 - INFO - Database connection closed.

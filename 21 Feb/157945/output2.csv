@@ -1,0 +1,5 @@
+ship_name,component_name,category,assembly_hours,avg_time,status
+Arctic Explorer,Propeller Assembly,Mechanical,53.5000000000000000,37.0833333333333333,Normal
+Sea Phantom,Communication Array,Electronic,51.6666666666666667,51.6666666666666667,Normal
+Titan Voyager,Engine System,Mechanical,31.5000000000000000,37.0833333333333333,Normal
+Maritime Titan,Anchor System,Mechanical,26.2500000000000000,37.0833333333333333,Normal

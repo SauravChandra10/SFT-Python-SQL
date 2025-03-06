@@ -1,0 +1,10 @@
+Platform,Interaction Type,Total Interactions,Avg Time (min),First Interaction,Last Interaction
+FeedbackLoop,data_export,1,,2025-02-10 12:00:00,2025-02-10 12:00:00
+SurveyMaster,login,2,,2025-02-10 08:15:00,2025-02-10 10:15:00
+OpinionPulse,login,1,,2025-02-10 11:00:00,2025-02-10 11:00:00
+QueryQuarry,login,1,,2025-02-10 12:30:00,2025-02-10 12:30:00
+StatTrack,query,1,,2025-02-10 11:30:00,2025-02-10 11:30:00
+InsightPro,query,1,,2025-02-10 09:30:00,2025-02-10 09:30:00
+ResponseRadar,query,1,,2025-02-10 12:15:00,2025-02-10 12:15:00
+TrendFinder,data_export,1,,2025-02-10 10:00:00,2025-02-10 10:00:00
+DataDive,query,1,,2025-02-10 10:45:00,2025-02-10 10:45:00

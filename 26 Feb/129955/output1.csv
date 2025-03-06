@@ -1,0 +1,6 @@
+site_id,site_name,avg_moisture,schedule_id,scheduled_time,duration,water_volume,status
+3,River Bend Farm,22.7000000000000000,3,2025-02-26 09:10:00,20,100.00,Scheduled
+6,Golden Fields,25.0000000000000000,6,2025-02-26 09:25:00,25,130.00,Completed
+9,Sunny Acres,27.5000000000000000,9,2025-02-26 09:40:00,45,190.00,Completed
+1,Green Valley Farm,28.5000000000000000,1,2025-02-26 09:00:00,30,150.00,Scheduled
+8,Red Barn Ranch,29.9000000000000000,8,2025-02-26 09:35:00,30,150.00,Scheduled

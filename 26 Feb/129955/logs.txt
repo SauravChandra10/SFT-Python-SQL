@@ -1,0 +1,6 @@
+2025-02-27 04:02:01,143 - INFO - Connected to the database.
+2025-02-27 04:02:01,144 - INFO - Executing query: WITH avg_moisture AS (
+2025-02-27 04:02:01,150 - INFO - Query executed successfully with 5 rows returned.
+2025-02-27 04:02:01,151 - INFO - Executing query: WITH daily_sensor AS (
+2025-02-27 04:02:01,153 - INFO - Query executed successfully with 10 rows returned.
+2025-02-27 04:02:01,154 - INFO - Database connection closed.

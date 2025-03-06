@@ -1,0 +1,11 @@
+user_id,first_name,last_name,total_itineraries,total_destinations,overall_avg_eco_rating,countries_visited
+1,John,Doe,1,2,9.5000000000000000,"['Brazil', 'Costa Rica']"
+2,Jane,Smith,1,2,9.0000000000000000,"['Costa Rica', 'Iceland']"
+3,Emily,Davis,1,2,8.5000000000000000,"['Chile', 'New Zealand']"
+4,Michael,Brown,1,2,8.0000000000000000,"['Kenya', 'Norway']"
+5,Sarah,Johnson,1,2,7.5000000000000000,"['Indonesia', 'Sri Lanka']"
+6,David,Wilson,1,2,8.5000000000000000,"['Australia', 'New Zealand']"
+7,Laura,Lee,1,1,8.0000000000000000,['Iceland']
+8,Robert,Garcia,1,1,9.0000000000000000,['Norway']
+9,Anna,Martinez,1,2,8.0000000000000000,"['Brazil', 'Sri Lanka']"
+10,James,Anderson,1,2,8.0000000000000000,"['Australia', 'Chile']"

@@ -1,0 +1,10 @@
+ship_name,component_name,status,start_time,end_time,worker_assigned
+Titan Voyager,Hull Frame,In Progress,2025-02-20 08:00:00,,John Doe
+Ocean Guardian,Navigation Suite,In Progress,2025-02-18 09:15:00,,Michael Brown
+Neptune Rider,Radar System,Not Started,2025-02-21 10:45:00,,
+Arctic Explorer,Propeller Assembly,Completed,2025-02-17 11:00:00,2025-02-19 16:30:00,Emma Wilson
+Storm Breaker,Fuel Tanks,In Progress,2025-02-15 13:20:00,,David Johnson
+Sea Phantom,Communication Array,Completed,2025-02-14 14:05:00,2025-02-16 17:45:00,Sophia Martinez
+Aqua Pioneer,Deck Panels,In Progress,2025-02-13 12:00:00,,Olivia Taylor
+Maritime Titan,Anchor System,Completed,2025-02-12 15:45:00,2025-02-13 18:00:00,James Anderson
+Wave Crusher,Cooling System,Not Started,2025-02-11 10:30:00,,

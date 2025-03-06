@@ -1,0 +1,8 @@
+2025-02-21 22:29:11,990 - INFO - Connected to the database successfully.
+2025-02-21 22:29:11,995 - INFO - Executed query: SELECT 
+2025-02-21 22:29:11,996 - INFO - Results written to output1.csv
+2025-02-21 22:29:11,996 - INFO - Query 1 executed and results saved to output1.csv.
+2025-02-21 22:29:11,999 - INFO - Executed query: WITH ranked_workouts AS (
+2025-02-21 22:29:11,999 - INFO - Results written to output2.csv
+2025-02-21 22:29:11,999 - INFO - Query 2 executed and results saved to output2.csv.
+2025-02-21 22:29:12,000 - INFO - Database connection closed.

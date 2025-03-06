@@ -1,0 +1,50 @@
+2025-02-24 20:46:44,814 - INFO - Script started.
+2025-02-24 20:46:44,814 - INFO - Starting execution of Query 1
+2025-02-24 20:46:44,815 - INFO - Connecting to the database.
+2025-02-24 20:46:44,846 - INFO - Executing query:
+SELECT 
+        c.first_name,
+        c.last_name,
+        c.experience_years,
+        s.skill_name,
+        s.proficiency_level,
+        w.company_name,
+        w.job_title,
+        EXTRACT(YEAR FROM AGE(w.end_date, w.start_date)) AS years_at_company
+    FROM 
+        candidates c
+    JOIN 
+        candidate_skills s ON c.candidate_id = s.candidate_id
+    JOIN 
+        work_experience w ON c.candidate_id = w.candidate_id
+    WHERE 
+        c.experience_years >= 5
+        AND s.proficiency_level = 'Expert'
+    ORDER BY 
+        years_at_company DESC, 
+        c.last_name;
+2025-02-24 20:46:44,859 - INFO - Query executed successfully, retrieved 4 rows.
+2025-02-24 20:46:44,860 - INFO - Database connection closed.
+2025-02-24 20:46:44,863 - INFO - Starting execution of Query 2
+2025-02-24 20:46:44,863 - INFO - Connecting to the database.
+2025-02-24 20:46:44,898 - INFO - Executing query:
+WITH candidate_tenure AS (
+        SELECT 
+            candidate_id,
+            SUM(EXTRACT(YEAR FROM AGE(COALESCE(end_date, CURRENT_DATE), start_date))) AS total_tenure
+        FROM work_experience
+        GROUP BY candidate_id
+    )
+    SELECT 
+        cs.skill_name,
+        COUNT(DISTINCT cs.candidate_id) AS candidate_count,
+        ROUND(AVG(c.experience_years), 2) AS avg_reported_experience,
+        ROUND(AVG(ct.total_tenure), 2) AS avg_computed_tenure
+    FROM candidate_skills cs
+    JOIN candidates c ON cs.candidate_id = c.candidate_id
+    JOIN candidate_tenure ct ON c.candidate_id = ct.candidate_id
+    GROUP BY cs.skill_name
+    ORDER BY avg_computed_tenure DESC;
+2025-02-24 20:46:44,910 - INFO - Query executed successfully, retrieved 10 rows.
+2025-02-24 20:46:44,910 - INFO - Database connection closed.
+2025-02-24 20:46:44,910 - INFO - Script finished.

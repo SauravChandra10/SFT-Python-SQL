@@ -1,0 +1,6 @@
+2025-02-08 02:49:00,134 - INFO - Attempting to connect to the database...
+2025-02-08 02:49:00,193 - INFO - Database connection established.
+2025-02-08 02:49:00,193 - INFO - Executing SQL query to aggregate change statistics...
+2025-02-08 02:49:00,198 - INFO - Query executed successfully, retrieved 10 rows.
+2025-02-08 02:49:00,201 - INFO - Results printed in formatted table.
+2025-02-08 02:49:00,201 - INFO - Database connection closed.

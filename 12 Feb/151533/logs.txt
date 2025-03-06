@@ -1,0 +1,7 @@
+2025-02-13 02:15:15,852 [INFO] Starting the query script.
+2025-02-13 02:15:15,902 [INFO] Connected to the database successfully.
+2025-02-13 02:15:15,910 [INFO] SQL query executed successfully.
+2025-02-13 02:15:15,910 [INFO] Retrieved 10 rows.
+2025-02-13 02:15:15,926 [INFO] Results saved to CSV file: output.csv
+2025-02-13 02:15:15,926 [INFO] Cursor closed.
+2025-02-13 02:15:15,926 [INFO] Database connection closed.

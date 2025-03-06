@@ -1,0 +1,6 @@
+2025-03-06 02:55:16,554 - INFO - Script started.
+2025-03-06 02:55:16,693 - INFO - Connection to the database was successful.
+2025-03-06 02:55:16,705 - INFO - Query executed successfully. Fetched 12 rows.
+2025-03-06 02:55:16,706 - INFO - Printing query results.
+2025-03-06 02:55:16,708 - INFO - Database connection closed.
+2025-03-06 02:55:16,708 - INFO - Script finished.

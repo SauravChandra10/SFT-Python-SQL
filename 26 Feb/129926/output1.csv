@@ -1,0 +1,11 @@
+supporter_id,name,interaction_count,avg_engagement,engagement_segment
+1,Alice Johnson,1,5.00,High Engagement
+10,Jack Turner,1,5.00,High Engagement
+6,Frank White,1,5.00,High Engagement
+8,Henry Brown,1,4.00,High Engagement
+3,Carol Davis,1,4.00,Moderate Engagement
+5,Eva Martin,1,4.00,Moderate Engagement
+2,Bob Smith,1,3.00,Moderate Engagement
+7,Grace Kim,1,3.00,Low Engagement
+4,David Lee,1,2.00,Low Engagement
+9,Isabel Clark,1,2.00,Low Engagement

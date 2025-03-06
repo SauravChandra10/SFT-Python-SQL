@@ -1,0 +1,56 @@
+2025-02-26 17:53:13,833 - INFO - Script execution started.
+2025-02-26 17:53:13,833 - INFO - Executing Query 1: Duplicate Groups with Canonical Document Details.
+2025-02-26 17:53:13,833 - INFO - Attempting to connect to the database.
+2025-02-26 17:53:13,880 - INFO - Database connection established.
+2025-02-26 17:53:13,880 - INFO - Executing query:
+WITH duplicate_groups AS (
+      SELECT
+        document_hash,
+        MIN(document_id) AS canonical_document_id,
+        COUNT(*) AS total_docs
+      FROM legal_documents
+      GROUP BY document_hash
+      HAVING COUNT(*) > 1
+    ),
+    duplicate_events AS (
+      SELECT
+        original_document_id,
+        COUNT(*) AS event_count
+      FROM document_duplicates
+      GROUP BY original_document_id
+    )
+    SELECT
+      dg.document_hash,
+      dg.canonical_document_id,
+      ld.document_title,
+      lc.case_name,
+      dg.total_docs,
+      COALESCE(de.event_count, 0) AS duplicate_events_logged
+    FROM duplicate_groups dg
+    JOIN legal_documents ld ON dg.canonical_document_id = ld.document_id
+    JOIN legal_cases lc ON ld.case_id = lc.case_id
+    LEFT JOIN duplicate_events de ON dg.canonical_document_id = de.original_document_id;
+2025-02-26 17:53:13,883 - INFO - Query executed successfully. Fetched 4 rows.
+2025-02-26 17:53:13,884 - INFO - Database connection closed.
+2025-02-26 17:53:13,885 - INFO - Query 1 results printed successfully.
+2025-02-26 17:53:13,885 - INFO - Executing Query 2: Cases Without Duplicates.
+2025-02-26 17:53:13,885 - INFO - Attempting to connect to the database.
+2025-02-26 17:53:14,032 - INFO - Database connection established.
+2025-02-26 17:53:14,032 - INFO - Executing query:
+WITH duplicate_hashes AS (
+      SELECT document_hash
+      FROM legal_documents
+      GROUP BY document_hash
+      HAVING COUNT(*) > 1
+    )
+    SELECT DISTINCT lc.case_id,
+           lc.case_name,
+           lc.case_status,
+           lc.filed_date
+    FROM legal_cases lc
+    JOIN legal_documents ld ON lc.case_id = ld.case_id
+    WHERE ld.document_hash NOT IN (SELECT document_hash FROM duplicate_hashes);
+2025-02-26 17:53:14,036 - INFO - Query executed successfully. Fetched 0 rows.
+2025-02-26 17:53:14,037 - INFO - Database connection closed.
+2025-02-26 17:53:14,038 - INFO - Query 2 results printed successfully.
+2025-02-26 17:53:14,038 - INFO - Script execution finished.

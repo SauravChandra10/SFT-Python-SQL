@@ -1,0 +1,5 @@
+2025-02-14 15:09:07,729 - INFO - Connected to the database successfully.
+2025-02-14 15:09:07,733 - INFO - Query executed successfully. Fetched 4 rows.
+2025-02-14 15:09:07,734 - INFO - Results successfully saved to output.csv.
+2025-02-14 15:09:07,734 - INFO - Database cursor closed.
+2025-02-14 15:09:07,734 - INFO - Database connection closed.

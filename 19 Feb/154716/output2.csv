@@ -1,0 +1,6 @@
+supplier,total_batches,failed_batches,failure_percentage,avg_processing_hours
+Supplier A,2,0,0.00,4.00
+Supplier B,1,0,0.00,4.50
+Supplier C,2,2,100.00,4.00
+Supplier D,2,0,0.00,4.00
+Supplier F,1,0,0.00,4.00

@@ -1,0 +1,7 @@
+category,appliance_id,product_name,avg_rating,review_count
+Cleaning,5,Vacuum Cleaner,5.0000000000000000,1
+Climate Control,10,Ceiling Fan,4.0000000000000000,1
+Kitchen,1,Smart Refrigerator,5.0000000000000000,1
+Kitchen,8,Electric Oven,5.0000000000000000,1
+Laundry,2,Washing Machine,4.0000000000000000,1
+Plumbing,7,Water Heater,3.0000000000000000,1

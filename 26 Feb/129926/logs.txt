@@ -1,0 +1,10 @@
+2025-02-26 20:44:55,174 - INFO - Script started.
+2025-02-26 20:44:55,225 - INFO - Connected to the database.
+2025-02-26 20:44:55,226 - INFO - Database cursor created.
+2025-02-26 20:44:55,226 - INFO - Executing supporters segmentation query.
+2025-02-26 20:44:55,229 - INFO - Supporters query executed; 10 rows fetched.
+2025-02-26 20:44:55,231 - INFO - Executing campaigns performance query.
+2025-02-26 20:44:55,233 - INFO - Campaigns query executed; 10 rows fetched.
+2025-02-26 20:44:55,236 - INFO - Cursor closed.
+2025-02-26 20:44:55,236 - INFO - Database connection closed.
+2025-02-26 20:44:55,237 - INFO - Script ended.

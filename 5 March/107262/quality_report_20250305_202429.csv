@@ -1,0 +1,11 @@
+productname,category,checkdate,status,defectcount,categoryaverage,defectstatus
+Spandex Leggings,Apparel,2025-02-25,Pass,0,0.50,Below Average
+Cotton T-Shirt,Apparel,2025-02-16,Pass,0,0.50,Below Average
+Denim Jeans,Apparel,2025-02-17,Pass,0,0.50,Below Average
+Leather Belt,Accessories,2025-02-23,Pass,0,0.67,Below Average
+Silk Scarf,Accessories,2025-02-18,Fail,2,0.67,Above Average
+Linen Shirt,Apparel,2025-02-21,Fail,1,0.50,Above Average
+Nylon Backpack,Accessories,2025-02-22,Pass,0,0.67,Below Average
+Rayon Dress,Apparel,2025-02-24,Fail,2,0.50,Above Average
+Polyester Jacket,Outerwear,2025-02-19,Pass,0,0.00,Average
+Wool Sweater,Apparel,2025-02-20,Pass,0,0.50,Below Average

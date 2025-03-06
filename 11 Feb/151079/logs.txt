@@ -1,0 +1,5 @@
+2025-02-11 20:32:54,171 - INFO - Connecting to the database.
+2025-02-11 20:32:54,210 - INFO - Executing query.
+2025-02-11 20:32:54,216 - INFO - Query executed successfully and results saved to output.csv.
+2025-02-11 20:32:54,217 - INFO - Cursor closed.
+2025-02-11 20:32:54,217 - INFO - Database connection closed.

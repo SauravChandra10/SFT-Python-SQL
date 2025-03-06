@@ -1,0 +1,14 @@
+2025-02-07 04:12:15,332 - INFO - Fetched 0 uncompressed transactions.
+2025-02-07 04:12:15,333 - INFO - No new transactions to compress.
+2025-02-07 04:12:15,435 - INFO - Retrieved 10 decompressed transactions.
+2025-02-07 04:12:15,435 - INFO - Decompressed Transactions:
+2025-02-07 04:12:15,436 - INFO - {'transaction_id': 10, 'policy_id': 110, 'customer_id': 210, 'transaction_type': 'claim', 'location': 'Dallas, USA', 'status': 'denied'}
+2025-02-07 04:12:15,436 - INFO - {'transaction_id': 2, 'policy_id': 102, 'customer_id': 202, 'transaction_type': 'premium_payment', 'location': 'Los Angeles, USA', 'status': 'processed'}
+2025-02-07 04:12:15,436 - INFO - {'transaction_id': 5, 'policy_id': 105, 'customer_id': 205, 'transaction_type': 'claim', 'location': 'Miami, USA', 'status': 'approved'}
+2025-02-07 04:12:15,442 - INFO - {'transaction_id': 8, 'policy_id': 108, 'customer_id': 208, 'transaction_type': 'claim', 'location': 'San Francisco, USA', 'status': 'under_review'}
+2025-02-07 04:12:15,442 - INFO - {'transaction_id': 6, 'policy_id': 106, 'customer_id': 206, 'transaction_type': 'deposit', 'location': 'Seattle, USA', 'status': 'processed'}
+2025-02-07 04:12:15,443 - INFO - {'transaction_id': 4, 'policy_id': 104, 'customer_id': 204, 'transaction_type': 'withdrawal', 'location': 'Chicago, USA', 'status': 'denied'}
+2025-02-07 04:12:15,443 - INFO - {'transaction_id': 1, 'policy_id': 101, 'customer_id': 201, 'transaction_type': 'claim', 'location': 'New York, USA', 'status': 'approved'}
+2025-02-07 04:12:15,443 - INFO - {'transaction_id': 3, 'policy_id': 103, 'customer_id': 203, 'transaction_type': 'claim', 'location': 'Houston, USA', 'status': 'under_review'}
+2025-02-07 04:12:15,443 - INFO - {'transaction_id': 9, 'policy_id': 109, 'customer_id': 209, 'transaction_type': 'withdrawal', 'location': 'Denver, USA', 'status': 'approved'}
+2025-02-07 04:12:15,443 - INFO - {'transaction_id': 7, 'policy_id': 107, 'customer_id': 207, 'transaction_type': 'premium_payment', 'location': 'Boston, USA', 'status': 'processed'}

@@ -1,0 +1,6 @@
+2025-02-14 02:11:00,476 - INFO - Script started
+2025-02-14 02:11:00,526 - INFO - Connected to the database successfully.
+2025-02-14 02:11:00,537 - INFO - Query executed successfully.
+2025-02-14 02:11:00,537 - INFO - Results written to output.csv successfully.
+2025-02-14 02:11:00,537 - INFO - Database connection closed.
+2025-02-14 02:11:00,537 - INFO - Script completed.

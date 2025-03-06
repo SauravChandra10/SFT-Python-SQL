@@ -1,0 +1,7 @@
+2025-02-19 20:27:28 INFO: Logging initialized.
+2025-02-19 20:27:28 INFO: Connected to the database successfully.
+2025-02-19 20:27:28 INFO: Executed query: SELECT  ...
+2025-02-19 20:27:28 INFO: Results successfully saved to output1.csv
+2025-02-19 20:27:28 INFO: Executed query: SELECT  ...
+2025-02-19 20:27:28 INFO: Results successfully saved to output2.csv
+2025-02-19 20:27:28 INFO: Database connection closed.

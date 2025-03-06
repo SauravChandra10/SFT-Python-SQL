@@ -1,0 +1,6 @@
+2025-02-21 22:15:34,653 - INFO - Connected to the database successfully.
+2025-02-21 22:15:34,658 - INFO - Executed query: SELECT 
+2025-02-21 22:15:34,660 - INFO - Query 1 executed successfully.
+2025-02-21 22:15:34,663 - INFO - Executed query: WITH ranked_workouts AS (
+2025-02-21 22:15:34,664 - INFO - Query 2 executed successfully.
+2025-02-21 22:15:34,664 - INFO - Database connection closed.

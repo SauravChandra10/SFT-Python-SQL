@@ -1,0 +1,8 @@
+2025-02-21 02:19:19,705 - INFO - Script started.
+2025-02-21 02:19:19,706 - INFO - Connecting to the database.
+2025-02-21 02:19:19,746 - INFO - Executing Query1.
+2025-02-21 02:19:19,751 - INFO - Query1 executed successfully. Retrieved 10 rows.
+2025-02-21 02:19:19,753 - INFO - Executing Query2.
+2025-02-21 02:19:19,754 - INFO - Query2 executed successfully. Retrieved 10 rows.
+2025-02-21 02:19:19,755 - INFO - Database connection closed.
+2025-02-21 02:19:19,755 - INFO - Script finished.

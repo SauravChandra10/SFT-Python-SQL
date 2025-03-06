@@ -1,0 +1,5 @@
+document_hash,canonical_document_id,document_title,case_name,total_docs,duplicate_events_logged
+hash_A,1,Complaint,Alpha vs Beta,2,2
+hash_B,3,Summons,Gamma vs Delta,3,4
+hash_C,6,Settlement Agreement,Smith vs Johnson,3,3
+hash_D,9,Motion,Alice vs Bob,2,0
